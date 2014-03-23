@@ -1,0 +1,14 @@
+---
+layout: default
+title: 19 Κείμενα
+---
+
+<ul>
+    {% for keimeno in site.data.19keimena %}
+        <li>
+        <a href="{{ site.url }}/keimena/{{ keimeno.name }}">{{ keimeno.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+

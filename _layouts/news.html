@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-md-4">
+    <div class="sidebar" data-spy="affix" >
+      <ul>
+        {% for post in site.posts %}
+          <li class="news-list-item">
+            <a href="{{ post.url }}">
+              <span class="news-date">
+                {{ post.date | date: "%d.%m.%y" }}
+              </span>
+              <span class="news-title">
+                {{ post.title }}
+              </span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <article>
+      {{ content }}
+    </article>
+  </div>
+</div>

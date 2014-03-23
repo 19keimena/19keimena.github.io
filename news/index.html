@@ -1,0 +1,8 @@
+---
+layout: news 
+title: Νέα
+---
+{% assign post = site.posts.first %}
+<h2>{{ post.title }}</h2>
+<p>{{ post.date | date: "%d.%m.%y" }}</p>
+{{ post.content }}

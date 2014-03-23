@@ -1,0 +1,117 @@
+body {
+  padding-top: 70px;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.sidebar ul {
+  font-family: 'GFS Didot', serif;
+  font-size: 16px;
+  margin-top: 20px;
+  padding-left: 5px;
+}
+
+.sidebar .news-list-item {
+  margin-bottom: 10px;
+}
+
+.sidebar .news-date {
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+}
+
+article p,
+article li,
+article li p {
+  font-family: 'GFS Didot', serif;
+  font-size: 15px;
+}
+
+article ul,
+.sidebar ul {
+  list-style-type: none;
+}
+
+article li:before {
+  content: "-";
+  margin-right: 10px;
+}
+
+article li p {
+  display: inline;
+}
+
+article h2 {
+  font-family: 'GFS Didot', serif;
+  margin-bottom: 20px;
+}
+
+article hr {
+  padding: 0;
+  border: none;
+  border-top: 1px solid #777;
+  color: #333;
+  text-align: center;
+  width: 20%;
+}
+
+article hr:before {
+  content: "§";
+    display: inline-block;
+    position: relative; 
+    top: -0.8em;  
+    font-size: 1em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+blockquote {
+  border-left: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+footer {
+  background-color: #fcfcfc;
+  margin-top: 20px;
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+}
+
+
+footer .license {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .license-text {
+  font-size: 12px;
+  margin-left: 5px;
+  display: block;
+}
+
+@media (min-width: 992px) {
+   .sidebar.affix {
+    position: fixed;
+    width: 250px;
+  }
+}
+
+.affix {
+  position: static; 
+  width: auto;
+}
+
+.glyphicon {
+  color: #777;
+}
+
+.navbar-brand {
+  font-family: monospace;
+  letter-spacing: 0.3em;
+  font-size: 1.7em;
+}

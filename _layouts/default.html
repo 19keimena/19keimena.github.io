@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% if page.title %}{{ page.title }}{% endif %}</title>
+    <link type="image/x-icon" rel="shortcut icon" href="/assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=GFS+Didot' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">19 κείμενα</a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            {% for entry in site.data.navigation %}
+              {% assign url = page.url | split: '/' %}
+              {% assign entry_url = entry.url | split: '/' %}
+              <li 
+                {% if forloop.first and url[1] == '' %}
+                  class="active"
+                {% elsif url[1] == entry_url[1] %}
+                  class="active"
+                {% endif %}
+              >
+              <a href="{{ entry.url }}">{{ entry.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="license">
+          <a rel="license"
+            href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Άδεια
+            Creative Commons" style="border-width:0"
+            src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><span
+            class="license-text">Το περιεχόμενο της ιστοσελίδας χορηγείται με άδεια <a rel="license"
+              href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+              Commons Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 4.0
+              Διεθνές </a>.</span>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="sidebar" data-spy="affix" >
+      <ul>
+        {% for entry in site.data[page.book] %}
+          {% capture url %}{{ site.url }}/keimena/{{ entry.name }}{% endcapture %}
+          <li>
+            {% if entry.title == page.title %}
+              <span class="glyphicon glyphicon-arrow-right"></span>
+            {% endif %}
+            <a href="{{ url }}"> {{ entry.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div id="scroll-placeholder" class="visible-sm visible-xs"></div>
+    <article>
+      <h2>{{ page.title }}</h2>
+      {{ content }}
+    </article>
+  </div>
+</div>
