@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Όλοι φεύγουν
-book: 19keimena
+book: 19
 ---
 Όλοι φεύγουν από αυτήν την πόλη.
 

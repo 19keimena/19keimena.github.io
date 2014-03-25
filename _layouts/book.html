@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-
 <div class="row">
   <div class="col-md-4">
     <div class="sidebar" data-spy="affix" >
       <ul>
-        {% for entry in site.data[page.book] %}
-          {% capture url %}{{ site.url }}/keimena/{{ entry.name }}{% endcapture %}
+        {% capture book %}{{ page.book | join: '' }}{% endcapture %}
+        {% for entry in site.data[book] %}
+          {% capture url %}{{ site.url }}/keimena/{{ page.book }}/{{ entry.name }}{% endcapture %}
           <li>
             {% if entry.title == page.title %}
               <span class="glyphicon glyphicon-arrow-right"></span>
