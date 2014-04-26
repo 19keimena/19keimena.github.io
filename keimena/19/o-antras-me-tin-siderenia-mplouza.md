@@ -3,6 +3,9 @@ layout: book
 title: Ο άντρας με την σιδερένια μπλούζα
 book: 19
 ---
+
+<img src="{{ site.url }}/assets/images/19/locked.png" class="img-responsive">
+
 Ο νεαρός άντρας στεκόταν στην κουζίνα, έπινε χυμό και ξαφνικά φώναξε:
 
 > - Θέλω μια σιδερένια μπλούζα!

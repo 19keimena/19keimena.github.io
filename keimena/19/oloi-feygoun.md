@@ -3,6 +3,9 @@ layout: book
 title: Όλοι φεύγουν
 book: 19
 ---
+
+<img src="{{ site.url }}/assets/images/19/dystopia.png" class="img-responsive">
+
 Όλοι φεύγουν από αυτήν την πόλη.
 
 Κατά κάποιον τρόπο νιώθω ότι έχω ξεμείνει στον τόπο και τον χρόνο αυτού του μέρους.
