@@ -4,7 +4,7 @@ title: Η ιστορία με τον ιπτάμενο δίσκο
 book: 19
 ---
 
-<img src="{{ site.url }}/assets/images/19/dino.png" class="img-responsive">
+<img src="{{ site.url }}/assets/images/19/truth.png" class="img-responsive">
 
 Είχα πάει στο γήπεδο για να τρέξω. Οι Beatles μου κάνανε παρέα και μου λέγανε διάφορα μεταξύ άλλων ότι δεν πα να αγοράζεις διαμάντια και ιστορίες, δίχως αγάπη ... τίποτα δεν γίνεται.
 

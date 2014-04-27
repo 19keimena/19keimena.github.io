@@ -1,7 +1,5 @@
 - name: αρχική
   url: /
-- name: νέα 
-  url: /news
 - name: κείμενα 
   url: /keimena/19/eksargyronontas-to-dikio
 - name: επικοινωνία
